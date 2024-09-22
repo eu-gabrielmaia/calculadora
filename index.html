@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Icon Calculadora.jpg">
+    <title>Calculadora</title>
+</head>
+<body class="container">
+        <table class="calculadora">
+            <tr class="numeros-resultado">
+                <th class="resultado" colspan="4">
+                    <input class="resultado-input" disabled value=''>
+                </th>
+            </tr>
+            <tr class="numeros-opcinais">
+                <td class="teclas opcoes" id="quadrado">x<sup><small>2</small></sup></td>
+                <td class="teclas opcoes" id="limpar">C</td>
+                <td class="teclas opcoes" id="limparTudo">CE</td>
+                <td class="teclas operacao" id="divisao" onclick="insertOperador('/')">/</td>
+            </tr>
+            <tr class="numeros-um">
+                <td class="teclas numero" id="um" onclick="insert('1')">1</td>
+                <td class="teclas numero" id="dois" onclick="insert('2')">2</td>
+                <td class="teclas numero" id="tres" onclick="insert('3')">3</td>
+                <td class="teclas operacao" id="multiplicacao" onclick="insertOperador('*')">X</td>
+            </tr>
+            <tr class="numeros-dois">
+                <td class="teclas numero" id="quatro" onclick="insert('4')">4</td>
+                <td class="teclas numero" id="cinco" onclick="insert('5')">5</td>
+                <td class="teclas numero" id="seis" onclick="insert('6')">6</td>
+                <td class="teclas operacao" id="subtracao" onclick="insertOperador('-')">-</td>
+            </tr>
+            <tr class="numeros-tres">
+                <td class="teclas numero" id="sete" onclick="insert('7')">7</td>
+                <td class="teclas numero" id="oito" onclick="insert('8')">8</td>
+                <td class="teclas numero" id="nove" onclick="insert('9')">9</td>
+                <td class="teclas operacao" id="adicao" onclick="insertOperador('+')">+</td>
+            </tr>
+            <tr class="numeros-zero">
+                <td class="teclas numero" id="negativo">+/-</td>
+                <td class="teclas numero" id="zero" onclick="insert('0')">0</td>
+                <td class="teclas decimal" id="ponto">.</td>
+                <td class="teclas igual" id="igual">=</td>
+            </tr>
+        </table>
+        <script src="prog.js"></script>
+</body>
+</html>
